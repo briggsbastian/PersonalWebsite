@@ -3,8 +3,7 @@ import emailjs from '@emailjs/browser';
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import {Box, Container, Button, Input, Textarea} from '@chakra-ui/react'
-import Fonts from '../components/fonts'
+import {Box, Button, Input, Textarea} from '@chakra-ui/react'
 const ContactMe = () => {
   const form = useRef();
 

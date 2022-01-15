@@ -1,7 +1,6 @@
-import { Container, Box, Heading, SimpleGrid, Divider} from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
-import thumbnailMonkey from '../public/funny_monkey.png'
 import dotfileThumbnail from '../public/dotfiles_thumbnail.png'
 import websiteThumbnail from '../public/Website.png'
 import picoDeckThumbnail from '../public/picodeck.jpg' 
