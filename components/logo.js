@@ -17,11 +17,9 @@ padding: 5px;
 `
 
 const Logo = () => {
-  const footPrintImg = `/../public/logo${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link href="/"><a><LogoBox>
-    <Image src={footPrintImg} width={25} height={25} alt="logo"/>
     <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontFamily="Fira Mono" fontWeight="bold" ml={3}>
         Briggs Bastian
     </Text>
