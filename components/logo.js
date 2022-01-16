@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { useColorModeValue, Text } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
@@ -22,6 +21,7 @@ const Logo = () => {
 
   return (
     <Link href="/"><a><LogoBox>
+    <Image src={footPrintImg} width={25} height={25} alt="logo"/>
     <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontFamily="Fira Mono" fontWeight="bold" ml={3}>
         Briggs Bastian
     </Text>
