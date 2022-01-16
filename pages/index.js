@@ -1,9 +1,8 @@
-import { Box, Container, Heading, Image, Button, Link, SimpleGrid, List, ListItem, Icon } from '@chakra-ui/react'
+import { Box, Container, Heading, Image, Button, Link, List, ListItem } from '@chakra-ui/react'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub , IoLogoLinkedin} from 'react-icons/io5'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { GridItem } from '../components/grid-item'
 import NextLink from 'next/link'
 const Page = () => {
   return (
