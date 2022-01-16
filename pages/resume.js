@@ -10,7 +10,7 @@ const Resume = () => {
     <Container>
       <Section>
       <Box>
-          <Heading p={100} align="center">
+          <Heading p={50} align="center">
             Work Experience
           </Heading>
           <br/>
@@ -19,36 +19,39 @@ const Resume = () => {
       <Box>
         <Section>
             <Heading>
-              McDonalds
+              <Section>McDonalds
+              <Section as="">2017-2019</Section></Section>     
             </Heading>
+        </Section>
+        <Section>
             <Paragraph>
-                from the moment I turned 16 and was able to get a work permit from school to the moment I turned 18, I worked at the first window in the drive through alone which entails taking orders, money, and handling any mistakes.
+               <Section> from the moment I turned 16 and was able to get a work permit from school to the moment I turned 18, I worked at the first window in the drive through alone which entails taking orders, money, and handling any mistakes.</Section>
             </Paragraph>
         </Section>
         <br/>
         <Section variant="section-title">
-          <Heading as="h2">
-            JNC MANAGEMENT 2019-2021
+          <Heading><Section>
+            JNC MANAGEMENT 
+            <Section>2019-2021</Section></Section>
           </Heading>
           <Paragraph>
-              After graduating high school and turning 18 within the same two weeks, I upgraded jobs to work at a small local retail store to sell, replace, troubleshoot and fix all sorts of SKUs
+             <Section> After graduating high school and turning 18 within the same two weeks, I upgraded jobs to work at a small local retail store to sell, replace, troubleshoot and fix all sorts of SKUs</Section>
           </Paragraph>
         </Section>
       </Box>
       <br/>
       <Box>
         <Section variant="section-title">
-          <Heading p={70}as="h3" align="center">
-            Education
+          <Heading p={50}as="h3" align="center">
+            <Section>Education</Section>
           </Heading>
-          <br/>
-          <br/>
           <Heading>
-              <div>UCSD Extension Security+ Bootcamp</div>
-              <div>March 2021 - September 2021</div>
+      
+              <Section>UCSD Extension Security+ Bootcamp
+              <Section>March 2021 - September 2021</Section></Section>
           </Heading>
           <Paragraph>
-              Although I learned most of my programming outside of school, here I learned how to use GNU/Linux, which is now my daily driver operating system. My command line expirence with Bash like shells (bash, zsh, fish), CMD and Powershell. 
+             <Section>Although I learned most of my programming outside of school, here I learned how to use GNU/Linux, which is now my daily driver operating system. My command line expirence with Bash like shells (bash, zsh, fish), CMD and Powershell.</Section> 
           </Paragraph>
         </Section>
       </Box>

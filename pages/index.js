@@ -1,7 +1,9 @@
-import { Box, Container, Heading, Image, Button, Link } from '@chakra-ui/react'
+import { Box, Container, Heading, Image, Button, Link, SimpleGrid, List, ListItem, Icon } from '@chakra-ui/react'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub , IoLogoLinkedin} from 'react-icons/io5'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import { GridItem } from '../components/grid-item'
 import NextLink from 'next/link'
 const Page = () => {
   return (
@@ -33,9 +35,12 @@ const Page = () => {
         <Heading as="h3" variant="section-title"> 
           About me
         </Heading>
+        <br/>
+        <Section>
         <Paragraph>
           Currently working on the <Link href="/projects/PICO_Deck">PICO_Deck</Link> project, a Raspberry PI PICO based Micro keyboard that is incredibly easy to configure, incluing an intuitive GUI that will work on all operating systems. This is currenly in a very early stage in its development 
         </Paragraph>
+        </Section>
       </Section>
       <Section>
       <NextLink href="./projects" align="left">
@@ -57,6 +62,35 @@ const Page = () => {
           </NextLink>
         </Box>
       </Section>
+      <br/>
+      <Section delay={0.5}>
+          <Heading as="h3" variant="section-title" p={5}>
+              Social Media
+          </Heading>
+          <List>
+              <ListItem>
+                  <Link href="https://www.twitter.com/BBoostin" target="_blank">
+                    <Button variant="ghost" colorScheme="hot-pink" leftIcon={<IoLogoTwitter/>}>Twitter</Button>
+                   </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://www.instagram.com/papaburgy" target="_blank">
+                  <Button variant="ghost" colorScheme="hot-pink" leftIcon={<IoLogoInstagram/>}>Instagram</Button>
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://www.linkedin.com/in/briggs-bastian/" target="_blank">
+                  <Button variant="ghost" colorScheme="hot-pink" leftIcon={<IoLogoLinkedin/>}>Linkedin</Button>
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://www.github.com/briggsbastian/" target="_blank">
+                  <Button variant="ghost" colorScheme="hot-pink" leftIcon={<IoLogoGithub/>}>Github</Button>
+                </Link>
+              </ListItem>
+          </List>
+      </Section>
+
     </Container>
   )
 }

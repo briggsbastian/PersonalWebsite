@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
 import dotfileThumbnail from '../public/dotfiles_thumbnail.png'
@@ -15,7 +15,8 @@ const Projects = () => {
 
             <SimpleGrid columns={[1,1,1]} gap={6}>
                 <Section>
-                    <WorkGridItem id="personal portfolio" title="This Website!" thumbnail={websiteThumbnail}>  
+                <Box p={5}>
+                    <WorkGridItem id="https://github.com/briggsbastian/PersonalWebsite" title="This Website!" thumbnail={websiteThumbnail}>  
                         This website! Which is totally open-source and free for anyone to rip!
                     </WorkGridItem>
                     <br/>
@@ -26,6 +27,7 @@ const Projects = () => {
                     <WorkGridItem id="/projects/PICO_Deck" title="PICO_Deck" thumbnail={picoDeckThumbnail}>
                         $150 for something I can make for about under $20? No!
                     </WorkGridItem>
+                </Box>
                 </Section>
             </SimpleGrid>    
         </Container>

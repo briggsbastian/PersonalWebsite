@@ -10,18 +10,19 @@ display: inline-flex;
 align-items: center;
 height: 30px;
 line-height: 20px
-padding: 10px;
+padding: 5px;
 
 &:hover img {
-  transform: rotate(35deg);
+  transform: rotate(15deg);
 }
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  const footPrintImg = `/../public/logo${useColorModeValue('', '-dark')}.png`
+
   return (
     <Link href="/"><a><LogoBox>
-    <Image src={footPrintImg} width={20} height={20} alt="logo"/>
+    <Image src={footPrintImg} width={25} height={25} alt="logo"/>
     <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontFamily="Fira Mono" fontWeight="bold" ml={3}>
         Briggs Bastian
     </Text>

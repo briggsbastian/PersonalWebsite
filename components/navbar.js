@@ -32,7 +32,7 @@ const Navbar = props => {
           <LinkItem href="./projects" path={path}>Projects</LinkItem>
           <LinkItem href="./resume" path={path}>Resume</LinkItem>
           <LinkItem href="./contact_me" path={path}>Email me</LinkItem>
-          <LinkItem href="https://www.github.com/briggsbastian/" path={path}>GitHub</LinkItem>
+          <NextLink href="https://www.github.com/briggsbastian" passHref>GitHub</NextLink>
         </Stack>
         <Box flex={11} align="right">
           <ThemeToggleButton />
