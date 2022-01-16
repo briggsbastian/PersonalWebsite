@@ -29,9 +29,9 @@ const Navbar = props => {
         </Flex>
         <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} alignItems="center" flexGrow={2}>
           <Fonts />
-          <LinkItem href="./projects" path={path}>Projects</LinkItem>
-          <LinkItem href="./resume" path={path}>Resume</LinkItem>
-          <LinkItem href="./contact_me" path={path}>Email me</LinkItem>
+          <LinkItem href="/projects" path={path}>Projects</LinkItem>
+          <LinkItem href="/resume" path={path}>Resume</LinkItem>
+          <LinkItem href="/contact_me" path={path}>Email me</LinkItem>
           <NextLink href="https://www.github.com/briggsbastian" passHref>GitHub</NextLink>
         </Stack>
         <Box flex={11} align="right">
@@ -43,13 +43,13 @@ const Navbar = props => {
             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
             <MenuList>
 
-              <NextLink href="./projects" passHref>
+              <NextLink href="/projects" passHref>
                 <MenuItem as={Link}>Projects</MenuItem>
               </NextLink>
-              <NextLink href="./resume" passHref>
+              <NextLink href="/resume" passHref>
                 <MenuItem as={Link}>Resume</MenuItem>
               </NextLink>
-              <NextLink href="./contact_me" passHref>
+              <NextLink href="/contact_me" passHref>
                 <MenuItem as={Link}>Email me</MenuItem>
               </NextLink>
               <NextLink href="https://www.github.com/briggsbastian/" passHref>
