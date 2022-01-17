@@ -20,7 +20,7 @@ const LinkItem = ({href, path, children}) => {
 const Navbar = props => {
   const { path } = props
   return (
-    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#e0e8c9', '#20202380')} style={{backdropFilter:'blur(20px)'}} zIndex={1} {...props}>
+    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#e7e7cb', '#20202380')} style={{backdropFilter:'blur(20px)'}} zIndex={1} {...props}>
       <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -59,7 +59,6 @@ const Navbar = props => {
           </Menu>
         </Box>
         <Box>
-          
         </Box>
       </Box>
       </Container>

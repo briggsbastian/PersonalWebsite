@@ -35,7 +35,7 @@ const Resume = () => {
             <Section>2017-2019</Section></Section>
           </Heading>
           <Paragraph>
-            <Section>The moment I turned 16 I looked for a job local to me, and got a job as a crew member at the busiest locatin in Simi Valley, taking orders, working the register, and being the first to work on any issues the customers might face with their food</Section>
+            <Section>The moment I turned 16 I looked for a job local to me, and got a job as a crew member at the busiest location in Simi Valley, taking orders, working the register, and being the first to work on any issues the customers might face with their food</Section>
           </Paragraph>
         </Section>
       </Box>
@@ -46,7 +46,6 @@ const Resume = () => {
             <Section>Education</Section>
           </Heading>
           <Heading>
-      
               <Section>UCSD Extension Security+ Bootcamp
               <Section>March 2021 - September 2021</Section></Section>
           </Heading>
