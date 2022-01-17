@@ -2,11 +2,14 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
+import { useState } from 'react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import {Box, Button, Input, Textarea} from '@chakra-ui/react'
+import {Box, Button, Input, Textarea, AlertDialog, AlertDialogHeader, AlertDialogFooter, AlertDialogBody, AlertDialogContent, AlertDialogCloseButton, AlertDialogOverlay } from '@chakra-ui/react'
 const ContactMe = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const onClose = () => setIsOpen(false)
+  const cancelRef = React.useRef()
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -36,9 +39,29 @@ const ContactMe = () => {
       <Textarea isInvalid errorBorderColor='grey' md="600px" focusBorderColor="blue" type="text" name="message" styles="background-color:grey"/>
       <br />
       <br />
-      <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" type="submit" id="Button" value="Send">
-        Send
-      </Button>
+
+      <Button rightIcon={<ChevronRightIcon />} colorScheme='green' type="submit" id="Button" value="Send" onClick={() => setIsOpen(true)}>Send</Button>
+          <AlertDialog
+            isOpen={isOpen}
+            leastDestructiveRef={cancelRef}
+            onClose={onClose}
+            isCentered
+          >
+
+          <AlertDialogOverlay/>  
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                Send Email
+              </AlertDialogHeader>
+              <AlertDialogCloseButton/>
+              <AlertDialogBody>
+                Your email was sent!
+              </AlertDialogBody>
+              <AlertDialogFooter>
+                <Button rightIcon={<ChevronRightIcon/>} colorScheme='green' ml={3} onClick={onClose}>Cool!</Button>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+        </AlertDialog>
     </form>
     </Box>
     </Section>

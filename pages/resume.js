@@ -19,23 +19,23 @@ const Resume = () => {
       <Box>
         <Section>
             <Heading>
-              <Section>McDonalds
-              <Section as="">2017-2019</Section></Section>     
+              <Section>JNC MANAGEMENT
+              <Section as="">2019-2021</Section></Section>     
             </Heading>
         </Section>
         <Section>
             <Paragraph>
-               <Section> from the moment I turned 16 and was able to get a work permit from school to the moment I turned 18, I worked at the first window in the drive through alone which entails taking orders, money, and handling any mistakes.</Section>
+              <Section>After graduating high school and turning 18 within two weeks, I upgraded from taking orders behind the counter at McDonalds to upselling and marketing the items sold there to maximize profits</Section>
             </Paragraph>
         </Section>
         <br/>
         <Section variant="section-title">
           <Heading><Section>
-            JNC MANAGEMENT 
-            <Section>2019-2021</Section></Section>
+            McDonalds
+            <Section>2017-2019</Section></Section>
           </Heading>
           <Paragraph>
-             <Section> After graduating high school and turning 18 within the same two weeks, I upgraded jobs to work at a small local retail store to sell, replace, troubleshoot and fix all sorts of SKUs</Section>
+            <Section>The moment I turned 16 I looked for a job local to me, and got a job as a crew member at the busiest locatin in Simi Valley, taking orders, working the register, and being the first to work on any issues the customers might face with their food</Section>
           </Paragraph>
         </Section>
       </Box>
