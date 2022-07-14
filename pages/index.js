@@ -37,7 +37,7 @@ const Page = () => {
         <br/>
         <Section>
         <Paragraph>
-          Currently working on the <Link href="/projects/PICO_Deck">PICO_Deck</Link> project, a Raspberry PI PICO based Micro keyboard that is incredibly easy to configure, incluing an intuitive GUI that will work on all operating systems. This is currenly in a very early stage in its development 
+            Residing in sunny Southern California. I am a 21 year old Gamer / Software Developer / Cyber Security Analyst for a hobby. 
         </Paragraph>
         </Section>
       </Section>
@@ -49,7 +49,7 @@ const Page = () => {
           </NextLink>
       </Section>
       <Section delay={0.2}>
-          I am currently looking for employment in the IT and Cybersecurity space to get my career started, while I also study for the CompTia Security+ and the Splunk Fundementals certifications. Please consider looking at my <Link href="./resume">Resume</Link>
+          I am currently looking for employment in the IT and Cybersecurity space after my recent employer closed its doors, Please consider looking at my <Link href="./resume">Resume</Link>
       </Section>
       <Section>
       <Box my={4} pd={3}>

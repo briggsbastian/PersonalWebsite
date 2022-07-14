@@ -24,9 +24,6 @@ const Projects = () => {
                         My dotfiles for fish, neovim, tmux, ranger, alacritty, and all the other tools I use way too much!
                     </WorkGridItem>
                     <br/>
-                    <WorkGridItem id="/projects/PICO_Deck" title="PICO_Deck" thumbnail={picoDeckThumbnail}>
-                        $150 for something I can make for about under $20? No!
-                    </WorkGridItem>
                 </Box>
                 </Section>
             </SimpleGrid>    

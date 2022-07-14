@@ -8,7 +8,7 @@ If you need to install `npm`,
 
 **Linux:** Found in your package manager, if it's not please update your package manager, with either `sudo apt update` or `sudo pacman -Syu`, then install `npm`
 
-**Windows:**
+**Windows:** Please use <a href="https://nodejs.org/en/download/" to download NodeJs onto your machine.>
 
 **Mac:** ` brew install npm `
 
