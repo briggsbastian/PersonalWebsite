@@ -5,12 +5,12 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
 import Fonts from './fonts'
 
-const LinkItem = ({href, path, children}) => {
+const LinkItem = ({href, path, children, target, ...props}) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whileAlpha.900')
   return (
     <NextLink href={href}>
-      <Link p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor}>
+      <Link p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor} target={target} {...props}>
         {children}
       </Link>
     </NextLink>
@@ -20,14 +20,14 @@ const LinkItem = ({href, path, children}) => {
 const Navbar = props => {
   const { path } = props
   return (
-    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#e7e7cb', '#20202380')} style={{backdropFilter:'blur(20px)'}} zIndex={1} {...props}>
+    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#dfd4b9', '#20202380')} style={{backdropFilter:'blur(30px)'}} zIndex={1} {...props}>
       <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
-        <Flex align="center" mr={5}>
+        <Flex align="center" mr={100}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
         </Flex>
-        <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} alignItems="center" flexGrow={2}>
+        <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} alignItems="center" flexGrow={10}>
           <Fonts />
           <LinkItem href="/projects" path={path}>Projects</LinkItem>
           <LinkItem href="/resume" path={path}>Resume</LinkItem>
@@ -39,7 +39,7 @@ const Navbar = props => {
         </Box>
       <Box flex={1} align="right">
         <Box ml={2} display={{base: 'inline-block'}}>
-          <Menu>
+          <Menu isLazy id="navbar-menu">
             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
             <MenuList>
 

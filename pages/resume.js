@@ -11,6 +11,7 @@ const Resume = () => {
     <Layout title="Resume">
     <Container>
       <Section>
+          <br/>
       <Box>
           <Heading p={50} align="center">
             Work Experience
@@ -19,11 +20,11 @@ const Resume = () => {
       </Box>
       </Section>
 
-      <Section variant="section-title">
+      <Section>
         <Box>
-            <Heading>
-              <Section>Sprout Mortgage - Help Desk technician
-              <Section as="h4"></Section>FEB 2022 - JULY 2022</Section>
+            <Heading>Sprout Mortgage</Heading><br/> <Heading as='h3' size='md'>
+              <Section>Help Desk technician</Section>
+              <Section>FEB 2022 - JULY 2022</Section>
             </Heading>
             <Section>
               <Paragraph>
@@ -33,25 +34,24 @@ const Resume = () => {
         </Box>
       </Section>
       <br/>
-      <Section variant="section-title">
+      <Section>
         <Box>
-        <Heading>
-          <Section>JNC Management<Section>
-          </Section>JUNE 2019 - MARCH 2021</Section>
-        </Heading>
+        <Heading>JNC Management</Heading> <br/> <Heading as="h3" size="md">
+          <Section>Sales Associate / Store Manager</Section> 
+          <Section>JUNE 2019 - MARCH 2021</Section>
+          </Heading>
           <Section>
-            <Paragraph>
-              JNC is a company that has small shops all around the country, mostly in California. This was a small box retail store that heavily relied on upselling and customer satisfaction to rely on them coming back.
-            </Paragraph>
+            <Paragraph>Working as a sales associate, I used sales techniques to try to maximize the profits that we would see per store, also handling all customer support requests from exchanges to refunds.</Paragraph>
+            <br/>
+            <Paragraph>As a manager I managed hours for my employees and did interviews to hire new ones. Lead projects to add new products or new promotions to try to get more sales. I would make deposits to our local bank for the company and make sure that relations were good with vendors to ensure continued supply of product</Paragraph>
           </Section>
         </Box>
       </Section>
       <br/>
-      <Section variant="sectinon-title">
+      <Section>
         <Box>
-          <Heading>
-            <Section>McDonalds<Section>
-            </Section>SEPT 2017 - JUNE 2019</Section>
+          <Heading as='h3' size='lg'>McDonald</Heading> <br/>
+           <Heading as='h3' size='md'><Section>Crew Member</Section><Section>SEPT 2017 - JUNE 2019</Section>
           </Heading>
           <Section>
             <Paragraph>I worked in taking orders in the drive-thru, being the first one to take orders, cash, and any customer support complaints that any customer may have had to make sure that they get solved.</Paragraph>
@@ -91,14 +91,10 @@ const Resume = () => {
       <br/>
       <br/>    
       <Box>
-        <Section variant="section-title">
-          <Heading p={50}as="h3" align="center">
-            <Section>Education</Section>
-          </Heading>
-          <Heading>
-              <Section>UCSD Extension Security+ Bootcamp
-              <Section>March 2021 - September 2021</Section></Section>
-          </Heading>
+        <Section>
+          <Heading p={50}as="h3" align="center"><Section>Education</Section></Heading> <br/>
+          <Heading as='h3' size='lg'><Section>UCSD Extension Security+ Bootcamp</Section></Heading>
+          <Heading as='h3' size='mg'><Section>March 2021 - September 2021</Section></Heading>
           <Paragraph>
              <Section>Although I learned most of my programming outside of school, here I learned how to use GNU/Linux, which is now my daily driver operating system. My command line expirence with Bash like shells (bash, zsh, fish), CMD and Powershell.</Section> 
           </Paragraph>
@@ -107,7 +103,7 @@ const Resume = () => {
 
       <br/>
 
-      <NextLink href="https://docs.google.com/document/d/10bbcA_la2hS5NrO2IxapIVJYQ4VewbQqiuNaYQGHQo8/edit?usp=sharing">
+      <NextLink href="https://docs.google.com/document/d/1q7hqYhzN1s0EuWbOUd3LUVO7KMBBgl4CQgWoNLtJec0/edit?usp=sharing">
       <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
         See my Resume in a DOC format
       </Button>

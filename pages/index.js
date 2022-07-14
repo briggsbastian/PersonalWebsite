@@ -36,9 +36,7 @@ const Page = () => {
         </Heading>
         <br/>
         <Section>
-        <Paragraph>
-            Residing in sunny Southern California. I am a 21 year old Gamer / Software Developer / Cyber Security Analyst for a hobby. 
-        </Paragraph>
+        <Paragraph>Residing in sunny Southern California. I am a 21 year old Gamer / Software Developer / Cyber Security Analyst for a hobby.</Paragraph>
         </Section>
       </Section>
       <Section>
@@ -49,7 +47,7 @@ const Page = () => {
           </NextLink>
       </Section>
       <Section delay={0.2}>
-          I am currently looking for employment in the IT and Cybersecurity space after my recent employer closed its doors, Please consider looking at my <Link href="./resume">Resume</Link>
+          <Paragraph>I am currently looking for employment in the IT and Cybersecurity space after my recent employer closed its doors, Please consider looking at my <Link href="./resume">Resume</Link></Paragraph>
       </Section>
       <Section>
       <Box my={4} pd={3}>
@@ -62,6 +60,7 @@ const Page = () => {
         </Box>
       </Section>
       <br/>
+      <Box>
       <Section delay={0.5}>
           <Heading as="h3" variant="section-title" p={5}>
               Social Media
@@ -89,7 +88,7 @@ const Page = () => {
               </ListItem>
           </List>
       </Section>
-
+      </Box>
     </Container>
   )
 }
