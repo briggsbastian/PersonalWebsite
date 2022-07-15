@@ -50,7 +50,7 @@ const Resume = () => {
       <br/>
       <Section>
         <Box>
-          <Heading as='h3' size='lg'>McDonald's</Heading> <br/>
+          <Heading as='h3' size='lg'>McDonald&apos;s</Heading> <br/>
            <Heading as='h3' size='md'><Section>Crew Member</Section><Section>SEPT 2017 - JUNE 2019</Section>
           </Heading>
           <Section>
