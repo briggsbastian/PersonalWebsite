@@ -20,14 +20,14 @@ const LinkItem = ({href, path, children, target, ...props}) => {
 const Navbar = props => {
   const { path } = props
   return (
-    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#dfd4b9', '#20202380')} style={{backdropFilter:'blur(30px)'}} zIndex={1} {...props}>
+    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#dfd4b9', '#20202380')} style={{backdropFilter:'blur(15px)'}} zIndex={2} {...props}>
       <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
         <Flex align="center" mr={100}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
         </Flex>
-        <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} alignItems="center" flexGrow={10}>
+        <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} alignItems="center" flexGrow={10} mt={{base: 4, md: 0}}>
           <Fonts />
           <LinkItem href="/projects" path={path}>Projects</LinkItem>
           <LinkItem href="/resume" path={path}>Resume</LinkItem>
@@ -36,13 +36,11 @@ const Navbar = props => {
         </Stack>
         <Box flex={11} align="right">
           <ThemeToggleButton />
-        </Box>
-      <Box flex={1} align="right">
-        <Box ml={2} display={{base: 'inline-block'}}>
+        
+          <Box align="right" ml={2} display={{base: 'inline-block', md: 'none'}}>
           <Menu isLazy id="navbar-menu">
             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
             <MenuList>
-
               <NextLink href="/projects" passHref>
                 <MenuItem as={Link}>Projects</MenuItem>
               </NextLink>
@@ -58,9 +56,7 @@ const Navbar = props => {
             </MenuList>
           </Menu>
         </Box>
-        <Box>
         </Box>
-      </Box>
       </Container>
     </Box>
   )
